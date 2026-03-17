@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkata Balaji – AI & Full Stack Engineer</title>
+  <meta name="description" content="Portfolio of Venkata Balaji Ananthagari – Aspiring AI & Software Engineer specializing in MERN Stack, Machine Learning, and Generative AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+  <a href="#education" onclick="closeMobileMenu()">Education</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="#contact" class="nav-cta" onclick="closeMobileMenu()">Let's Talk</a>
+</div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">VB<span style="color:var(--cyan)">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Reach Out <i class="fa-solid fa-paper-plane"></i></a>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg-orb orb-1"></div>
+  <div class="hero-bg-orb orb-2"></div>
+  <div class="hero-bg-orb orb-3"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for Internships & Collaborations
+        </div>
+        <h1 class="hero-title">
+          Venkata<br>
+          <span class="gradient-text">Balaji</span><br>
+          Ananthagari
+        </h1>
+        <p class="hero-subtitle">AI Engineer &amp; Full Stack Developer</p>
+        <p class="hero-desc">
+          I am a student at VIT-AP University. I enjoy building websites and working with data to create useful applications. I have experience in both software development and machine learning.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">8.25</div>
+            <div class="stat-label">CGPA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Internships</div>
+          </div>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="hero-image-side">
+        <div class="avatar-container">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-inner"></div>
+          <img src="profile.jpg" alt="Venkata Balaji Ananthagari" class="avatar-img" id="profileImg" />
+        </div>
+        <!-- Float Cards -->
+        <div class="avatar-float-card float-card-1">
+          <i class="fa-solid fa-brain float-icon" style="color:var(--purple-light)"></i>
+          <div class="float-text">
+            <strong>Machine Learning</strong>
+            <span>Training Models</span>
+          </div>
+        </div>
+        <div class="avatar-float-card float-card-2">
+          <i class="fa-solid fa-code float-icon" style="color:var(--cyan-light)"></i>
+          <div class="float-text">
+            <strong>Development</strong>
+            <span>Java & Python</span>
+          </div>
+        </div>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/venkata-balaji/" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Balaji268268" target="_blank" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:venkatabalaji529@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="about-card">
+          <div class="section-tag">Who I Am</div>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="about-text">
+            I am a third-year B.Tech student at VIT-AP University. I am interested in building applications using Python and Java. I like to solve problems and learn new technologies that can help people.
+          </p>
+          <p class="about-text">
+            I have worked on projects like Civix, which helps in city management, and TranscribeFlow, which turns audio into text. I am always looking for new things to learn and ways to improve my skills.
+          </p>
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot info-icon" style="color:var(--cyan-light)"></i>
+              <span class="info-label">Location</span>
+              <span class="info-value">Mydukur, Andhra Pradesh, India</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-university info-icon" style="color:var(--purple-light)"></i>
+              <span class="info-label">University</span>
+              <span class="info-value">VIT-AP University</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone info-icon" style="color:var(--cyan-light)"></i>
+              <span class="info-label">Phone</span>
+              <span class="info-value">+91 6304187514</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope info-icon" style="color:var(--purple-light)"></i>
+              <span class="info-label">Email</span>
+              <span class="info-value"><a href="mailto:venkatabalaji529@gmail.com">venkatabalaji529@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-highlights reveal-right">
+        <div class="highlight-card">
+          <i class="fa-solid fa-robot highlight-icon" style="color:var(--purple-light)"></i>
+          <div>
+            <div class="highlight-title">Machine Learning</div>
+            <div class="highlight-desc">I build models that can analyze data and provide insights.</div>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <i class="fa-solid fa-laptop-code highlight-icon" style="color:var(--cyan-light)"></i>
+          <div>
+            <div class="highlight-title">Web Development</div>
+            <div class="highlight-desc">I create websites and applications using tools like React and Node.js.</div>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <i class="fa-solid fa-database highlight-icon" style="color:var(--purple-light)"></i>
+          <div>
+            <div class="highlight-title">Data Analysis</div>
+            <div class="highlight-desc">I use SQL and Python to understand and manage information.</div>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🛠️</div>
+          <div>
+            <div class="highlight-title">Problem Solver</div>
+            <div class="highlight-desc">Passionate about civic tech, NLP pipelines, and systems that automate tedious workflows at scale.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ SKILLS ═══════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-tag">What I Know</div>
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <p class="section-desc">A blend of AI/ML expertise and modern full stack development skills.</p>
+    </div>
+    <div class="skills-grid">
+
+      <!-- ML / AI -->
+      <div class="skill-category reveal">
+        <i class="fa-solid fa-brain skill-cat-icon" style="color:var(--purple-light)"></i>
+        <div class="skill-cat-title">Machine Learning</div>
+        <div class="skill-tags">
+          <span class="skill-tag tag-purple">Machine Learning</span>
+          <span class="skill-tag tag-purple">Deep Learning</span>
+          <span class="skill-tag tag-purple">Neural Networks</span>
+          <span class="skill-tag tag-purple">Data Preprocessing</span>
+          <span class="skill-tag tag-purple">Model Training</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+        </div>
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="skill-category reveal">
+        <i class="fa-solid fa-code skill-cat-icon" style="color:var(--cyan-light)"></i>
+        <div class="skill-cat-title">Programming Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag tag-cyan">Python</span>
+          <span class="skill-tag tag-cyan">Java</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+        </div>
+      </div>
+
+      <!-- Full Stack -->
+      <div class="skill-category reveal">
+        <i class="fa-solid fa-layer-group skill-cat-icon" style="color:var(--purple-light)"></i>
+        <div class="skill-cat-title">Full Stack Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag tag-green">React 18</span>
+          <span class="skill-tag tag-green">Node.js</span>
+          <span class="skill-tag tag-green">Express.js</span>
+          <span class="skill-tag tag-green">MongoDB</span>
+          <span class="skill-tag tag-green">Flask</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+
+      <!-- Tools & Cloud -->
+      <div class="skill-category reveal">
+        <i class="fa-solid fa-cloud skill-cat-icon" style="color:var(--cyan-light)"></i>
+        <div class="skill-cat-title">Tools & Cloud</div>
+        <div class="skill-tags">
+          <span class="skill-tag tag-cyan">Git / GitHub</span>
+          <span class="skill-tag tag-cyan">Google Cloud Platform</span>
+          <span class="skill-tag tag-cyan">MongoDB Atlas</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ PROJECTS ═══════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-tag">What I've Built</div>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <p class="section-desc">Real-world applications blending AI, Full Stack, and intuitive design.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- CIVIX -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <i class="fa-solid fa-city project-emoji" style="color:var(--purple-light)"></i>
+          <div class="project-links">
+            <a href="https://civix-plus.vercel.app" target="_blank" class="project-link" title="Live Demo"><i class="fa-solid fa-link"></i></a>
+            <a href="https://civix-plus.vercel.app" target="_blank" class="project-link" title="Open Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Civix</div>
+          <div class="project-tagline">Civic Hub Application</div>
+          <p class="project-desc">
+            I built an application that helps citizens report issues like potholes or garbage to the city authorities. The system uses vision models to verify the reports and routes them to the correct department.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">Used vision models to classify reports with high accuracy</div>
+            <div class="project-feature">Real-time updates for officials to track field operations</div>
+            <div class="project-feature">Separate portals for citizens, officers, and administrators</div>
+            <div class="project-feature">Geospatial visualization of reported issues on a map</div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React 18</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Socket.io</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">TensorFlow</span>
+            <span class="stack-tag">Gemini Vision</span>
+            <span class="stack-tag">Clerk Auth</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-status status-live"><span class="status-dot status-dot-live"></span> Live</div>
+            <span class="project-year">2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TranscribeFlow -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <i class="fa-solid fa-microphone-lines project-emoji" style="color:var(--cyan-light)"></i>
+          <div class="project-links">
+            <a href="https://github.com/Balaji268268/TranscibeFlow" target="_blank" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">TranscribeFlow</div>
+          <div class="project-tagline">Audio to Text Tool</div>
+          <p class="project-desc">
+            This tool converts audio files into text and provides summaries. It also supports translation into many languages and analyzes audio features like energy and clarity.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">Automatic transcription using speech-to-text models</div>
+            <div class="project-feature">Generates brief summaries and identifies key points</div>
+            <div class="project-feature">Supports translation into more than 100 languages</div>
+            <div class="project-feature">Displays audio metrics like pace and energy level</div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Flask</span>
+            <span class="stack-tag">OpenAI Whisper</span>
+            <span class="stack-tag">BART</span>
+            <span class="stack-tag">Librosa</span>
+            <span class="stack-tag">PyTorch</span>
+            <span class="stack-tag">Clerk</span>
+            <span class="stack-tag">Python</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-status status-dev"><span class="status-dot status-dot-dev"></span> Infosys SpringBoard</div>
+            <span class="project-year">Feb 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sentiment Analysis -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <i class="fa-solid fa-comments project-emoji" style="color:var(--purple-light)"></i>
+          <div class="project-links">
+            <a href="https://github.com/Balaji268268" target="_blank" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Sentiment Analysis</div>
+          <div class="project-tagline">Text Analysis Pipeline</div>
+          <p class="project-desc">
+            I developed a system that analyzes customer feedback to determine if the sentiment is positive or negative. It is designed to be easily added to other applications.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">Analyzes text to classify feedback with high accuracy</div>
+            <div class="project-feature">Efficient processing for handling large amounts of text</div>
+            <div class="project-feature">Modular design for simple integration with web apps</div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">NLP</span>
+            <span class="stack-tag">Scikit-learn</span>
+            <span class="stack-tag">TF-IDF</span>
+            <span class="stack-tag">Pandas</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-status status-dev"><span class="status-dot status-dot-dev"></span> Completed</div>
+            <span class="project-year">2024</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ EXPERIENCE ═══════════════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Work History</div>
+      <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
+      <p class="section-desc">Hands-on industry exposure in AI/ML development and NLP engineering.</p>
+    </div>
+    <div class="timeline">
+
+      <!-- Infosys SpringBoard -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">AI Developer Intern</div>
+            <div class="timeline-date">Dec 2025 – Feb 2026</div>
+          </div>
+          <div class="timeline-company">
+            <img src="infosys_logo.png" alt="Infosys" class="company-logo" />
+            <span>Infosys SpringBoard</span>
+          </div>
+          <ul class="timeline-points">
+            <li>I built the TranscribeFlow platform, which handles audio transcription and translation.</li>
+            <li>I worked with tools like Flask and speech models to provide summaries and analytics.</li>
+            <li>I created a system for users to try the service before creating an account.</li>
+            <li>I enabled translation for over 100 languages for better accessibility.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Adroit Technologies -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Generative AI Intern</div>
+            <div class="timeline-date">Jun 2025 – Aug 2025</div>
+          </div>
+          <div class="timeline-company">
+            <img src="adroit_logo.png" alt="Adroit" class="company-logo" />
+            <span>Adroit Technologies</span>
+          </div>
+          <ul class="timeline-points">
+            <li>I learned about generative AI and how to use it on cloud platforms.</li>
+            <li>I explored techniques like prompt engineering and model fine-tuning.</li>
+            <li>I worked with cloud APIs to build and deploy AI models.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Teachnook -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">AI & Machine Learning Intern</div>
+            <div class="timeline-date">Jul 2024 – Aug 2024</div>
+          </div>
+          <div class="timeline-company">
+            <i class="fa-solid fa-code-branch company-logo-icon"></i>
+            <span>Teachnook</span>
+          </div>
+          <ul class="timeline-points">
+            <li>I developed a chatbot that can understand user intent and analyze sentiment.</li>
+            <li>I worked on data processing to make sure the models performed well.</li>
+            <li>I helped design the logic for how the chatbot should respond to users.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ EDUCATION ═══════════════════════════════════════ -->
+<section id="education">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-tag">Academic Background</div>
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <p class="section-desc">A strong academic foundation in Computer Science and Engineering.</p>
+    </div>
+    <div class="edu-grid">
+
+      <div class="edu-card current reveal">
+        <i class="fa-solid fa-graduation-cap edu-icon" style="color:var(--purple-light)"></i>
+        <div class="edu-degree">B.Tech – Computer Science &amp; Engineering</div>
+        <div class="edu-school">VIT-AP University</div>
+        <div class="edu-meta">
+          <span class="edu-badge badge-purple">2023 – 2027</span>
+          <span class="edu-badge badge-green">CGPA: 8.25 / 10</span>
+        </div>
+      </div>
+
+      <div class="edu-card inter reveal">
+        <i class="fa-solid fa-book-open edu-icon" style="color:var(--cyan-light)"></i>
+        <div class="edu-degree">Intermediate (BIEAP)</div>
+        <div class="edu-school">Narayana Junior College</div>
+        <div class="edu-meta">
+          <span class="edu-badge badge-purple">2021 – 2023</span>
+          <span class="edu-badge badge-green">97.4%</span>
+        </div>
+      </div>
+
+      <div class="edu-card school reveal">
+        <i class="fa-solid fa-school edu-icon" style="color:var(--purple-light)"></i>
+        <div class="edu-degree">Secondary Education (SSC)</div>
+        <div class="edu-school">Sri Chaitanya School</div>
+        <div class="edu-meta">
+          <span class="edu-badge badge-purple">2021</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CERTIFICATIONS ═══════════════════════════════════════ -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-tag">Credentials</div>
+      <h2 class="section-title">Certifications &amp; <span class="accent">Achievements</span></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <img src="ibm_logo.png" alt="IBM" class="cert-logo" />
+        <div>
+          <div class="cert-name">Generative AI Fundamentals</div>
+          <div class="cert-issuer">IBM</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-database cert-icon" style="color:var(--cyan-light)"></i>
+        <div>
+          <div class="cert-name">Data Analytics using SQL</div>
+          <div class="cert-issuer">Boston Training Academy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+      <p class="section-desc">Open for internships, collaborations, and interesting projects. Don't hesitate to reach out!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope contact-icon" style="color:var(--purple-light)"></i>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value"><a href="mailto:venkatabalaji529@gmail.com">venkatabalaji529@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone contact-icon" style="color:var(--cyan-light)"></i>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+91 6304187514</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin contact-icon" style="color:var(--purple-light)"></i>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value"><a href="https://www.linkedin.com/in/venkata-balaji/" target="_blank">venkata-balaji</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github contact-icon" style="color:var(--cyan-light)"></i>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value"><a href="https://github.com/Balaji268268" target="_blank">Balaji268268</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot contact-icon" style="color:var(--purple-light)"></i>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-value">Mydukur, Andhra Pradesh, India</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal-right">
+        <div class="form-title">Send a Message <i class="fa-solid fa-paper-plane"></i></div>
+        <div class="form-group">
+          <label class="form-label" for="contactName">Your Name</label>
+          <input class="form-input" type="text" id="contactName" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contactEmail">Email Address</label>
+          <input class="form-input" type="email" id="contactEmail" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contactSubject">Subject</label>
+          <input class="form-input" type="text" id="contactSubject" placeholder="Internship Opportunity / Collaboration" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contactMessage">Message</label>
+          <textarea class="form-textarea" id="contactMessage" placeholder="Hey Balaji, I'd love to talk about..."></textarea>
+        </div>
+        <button class="form-submit" id="submitBtn" onclick="handleFormSubmit()">Send Message 🚀</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">VB<span style="color:var(--cyan)">.</span></div>
+      <p class="footer-copy">© 2026 Venkata Balaji Ananthagari · Built with ❤️ & passion</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/venkata-balaji/" target="_blank" class="footer-social" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Balaji268268" target="_blank" class="footer-social" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:venkatabalaji529@gmail.com" class="footer-social" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
